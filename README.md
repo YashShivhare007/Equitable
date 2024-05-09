@@ -107,6 +107,9 @@ This web application facilitates image annotation using a robust layered archite
 - **Authentication:** JWT for secure user authentication
 - **Additional Libraries:** React Dropzone for file uploads.
 
+## Reference Images
+- Reference images have been added signifying the various functionalties and how user and manager accounts have different purposes
+
 ## Contributing
 
 Contributions are welcome! Fork the repository and submit pull requests.
@@ -114,4 +117,3 @@ Contributions are welcome! Fork the repository and submit pull requests.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-[Image Description](./referenceImages/userhome.jpg)
