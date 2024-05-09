@@ -1,0 +1,245 @@
+
+.card {
+    justify-content: center;
+    margin: 20px;
+    box-shadow: 0 0 5px #ffdfdf;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card .top {
+    color:linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    text-align:center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.card p{
+    font-weight: bold;
+    font-size: 50px;
+    color:linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    justify-content: center;
+}
+.card button{
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    width: 40%;
+    height: 5vh;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+.card button:active,
+.card button:hover {
+  outline: 0;
+}
+
+.card button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.card button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+
+
+
+
+
+
+.card .drag-area{
+    height: 150px;
+    border-radius: 5px;
+    border: 2px dashed #0086fe;
+    background: #f4f3f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-top: 10px;
+}
+.card .drag-area.visible{
+    font-size: 18px;
+}
+.card .select{
+    color: #5256ad;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card .select:hover{
+    opacity: 0.6;
+}
+.card .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.card .container .image{
+    width: 75px;
+    margin-right: 5px;
+    height: 75px;
+    position: relative;
+    margin-bottom: 8px;  
+}
+
+.card .container .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card .container .image span{
+    position: absolute;
+    top: -2px;
+    right: 9px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.card input,
+.card .drag-area .on-drop,
+.card .drag-area.dragover .visible{
+    display: none;
+}
+.delete{
+    z-index: 999;
+    color: #0086fe;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.edit-slider img {
+    display: block;
+    margin: 0 auto;
+}
+/* General styles for the slider */
+.slick-slider {
+    position: relative;
+    padding: 20px;  /* Add padding around the slider */
+}
+
+/* Style for Next and Previous buttons */
+.slick-prev, .slick-next {
+    z-index: 1;  /* Ensure the arrows are above the images */
+    background-color: #fff; /* Add background color for visibility */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 50%; /* Circular buttons */
+    width: 30px;  /* Fixed width */
+    height: 30px; /* Fixed height */
+    color: black; /* Arrow color */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Positions for Next and Previous buttons */
+.slick-prev {
+    left: 10px; /* Position from the left side */
+}
+
+.slick-next {
+    right: 10px; /* Position from the right side */
+}
+
+/* Ensure arrows are easily clickable and visible */
+.slick-prev:before, .slick-next:before {
+    font-size: 20px; /* Larger arrow icons */
+    opacity: 1; /* Fully opaque arrows */
+    color: black; /* Arrow color */
+}
+
+/* Hover states for the navigation arrows */
+.slick-prev:hover, .slick-next:hover,
+.slick-prev:focus, .slick-next:focus {
+    background-color: #ddd; /* Background color on hover/focus */
+    outline: none; /* Remove focus outline */
+}
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+

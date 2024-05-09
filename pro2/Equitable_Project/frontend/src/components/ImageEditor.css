@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.edit-slider img {
+    display: block;
+    margin: 0 auto;
+}
+/* General styles for the slider */
+.slick-slider {
+    position: relative;
+    padding: 20px;  /* Add padding around the slider */
+}
+
+/* Style for Next and Previous buttons */
+.slick-prev, .slick-next {
+    z-index: 1;  /* Ensure the arrows are above the images */
+    background-color: #fff; /* Add background color for visibility */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 50%; /* Circular buttons */
+    width: 30px;  /* Fixed width */
+    height: 30px; /* Fixed height */
+    color: black; /* Arrow color */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Positions for Next and Previous buttons */
+.slick-prev {
+    left: 10px; /* Position from the left side */
+}
+
+.slick-next {
+    right: 10px; /* Position from the right side */
+}
+
+/* Ensure arrows are easily clickable and visible */
+.slick-prev:before, .slick-next:before {
+    font-size: 20px; /* Larger arrow icons */
+    opacity: 1; /* Fully opaque arrows */
+    color: black; /* Arrow color */
+}
+
+/* Hover states for the navigation arrows */
+.slick-prev:hover, .slick-next:hover,
+.slick-prev:focus, .slick-next:focus {
+    background-color: #ddd; /* Background color on hover/focus */
+    outline: none; /* Remove focus outline */
+}
+
