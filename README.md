@@ -71,20 +71,17 @@ This web application facilitates image annotation using a robust layered archite
   - Users have access to basic functionalities like image upload, annotation, and viewing.
 
 - **Manager Authorization:**
-  - Managers have additional permissions such as managing user accounts, annotating images, and accessing advanced features.
+  - Managers have additional permissions such as managing user accounts, annotating images, and viewing all the images in the database.
 
 ## Features
 
 - **Image Upload**
-  - Supports uploading images in various formats and sizes.
+  - Supports uploading images in various formats.
   - Batch upload for multiple images simultaneously.
 
 - **Image Annotation**
   - Annotate images using a dropdown menu of predefined class names.
   - Quick and intuitive annotation process with modification capabilities.
-
-- **Advanced Image Processing**
-  - Basic image processing features like resizing upon upload.
 
 - **User Authentication**
   - JWT-based authentication ensures secure access and user privacy.
